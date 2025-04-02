@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+a {
+    background: transparent;
+    color: #fff;
+    display: block;
+    
+}
+  
+ul {
+    list-style: none;
+    position: relative;
+    text-align: left;
+}
+  
+li {
+    float: left;
+}
+  
+  /* clear'n floats */
+  ul:after {
+    clear: both;
+}
+  
+ul:before,
+ul:after {
+      content: " ";
+      display: table;
+}
+
+
+nav {
+    font-family: 'Big Shoulders Text', cursive;
+    position: relative;
+    background:transparent;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    
+  }
+  
+  /* prime */
+  ul.primary li a {
+    color: #ffffff;
+    display: block;
+    padding: 20px 30px;
+    border-right: 1px solid #000000;
+  }
+  
+  ul.primary li:last-child a {
+    border-right: none;
+  }
+  
+  ul.primary li a:hover {
+    
+    color: #000;
+  }
+  
+  /* subs */
+  ul.sub {
+    position: absolute;
+    z-index: 200;
+    box-shadow: 2px 2px 0 #000000;
+    width: 15%;
+    display:none;
+    opacity: 0.5;
+  }
+  
+  ul.sub li {
+    float: none;
+    margin: 0;
+  }
+  
+  ul.sub li a {
+    border-bottom: 1px dotted #ccc;
+    border-right: none;
+    color: #000;
+    padding: 15px 30px;
+    text-align: left;
+  }
+  
+  ul.sub li:last-child a {
+    border-bottom: none;
+  }
+  
+  ul.sub li a:hover {
+    color: #000;
+    background: #eeeeee;
+  }
+  
+  /* sub display*/
+  ul.primary li:hover ul {
+    display: block;
+    background: #fff;
+  }
+  
+  /* keeps the tab background white */
+  ul.primary li:hover a {
+    background: #fff;
+    color: #000000;
+    text-shadow: none;
+  }
+  
+  ul.primary li:hover > a{
+    color: #000000;
+    opacity: 0.5;
+  } 
+  
+  @media only screen and (max-width: 200px) {
+    .decor {
+      padding: 3px;
+    }
+    
+    .wrap {
+      width: 100%;
+      margin-top: 0px;
+    }
+    
+     li {
+      float: none;
+    }
+    
+    ul.primary li:hover a {
+      background: none;
+      color: #000000;
+      text-shadow: 1px 1px #000;
+      
+    }
+  
+    ul.primary li:hover ul {
+      display: block;
+      background: #000000;
+      color: #fff;
+    }
+    
+    ul.sub {
+      display: block;  
+      position: static;
+      box-shadow: none;
+      width: 100%;
+    }
+    
+    ul.sub li a {
+      background: #000000;
+        border: none;
+      color: #8B8B8B;
+    }
+    
+    ul.sub li a:hover {
+      color: #ccc;
+      background: none;
+    }
+  }
+
+.section-intro {
+    height: 1000px;
+    font-family: 'Big Shoulders Text', cursive;
+    background-image: url(img/snookerclub2-1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width:270px;
+    height:335px;
+    position:absolute;
+    background-color: #ffffff;
+    opacity:0.5;
+    top: 40px;
+    transform: translate(0%,-5%);
+    color: #000000;
+    font-size:20px ;
+    border-radius: 20px;
+    padding: 15px;
+    margin:5px;
+    right: 40px;
+}
+
+.form h2{
+    background-color: #1ee4918c;
+    width:220px;
+    text-align: center;
+    color: #000000;
+    font-size:22px;
+    border-radius: 20px;
+    border-color: #ffffff;
+    padding: 8px;
+    margin:10px;
+    
+}
+.btnn{
+    background:#fbfbfb;
+    font-size: 15px;
+    cursor:pointer;
+    transition:0.3s ease;
+    border: 1px solid #060606;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 90px;
+    color: #060606;
+}
+.form input{
+    width:240px;
+    height:35px;
+    background: transparent;
+    border-radius: 10px;
+    padding:3px;
+    color: #000000;
+    font-size:15px ;
+    letter-spacing: 1px;
+    margin-top:8px;
+
+}
+.icons{
+    padding: 20px;
+    font-size: 25px;
+    margin-top: -75px;
+    text-align: center;
+    
+}
+.fa-facebook:hover {
+    background: #3B5998;
+    color: rgb(255, 255, 255);
+    
+}
+.fa-twitter:hover{
+    background: #55ACEE;
+    color: white;
+    
+}
+.fa-google:hover {
+    background: #dd4b39;
+    color: white;
+    
+  }
+.fa-youtube:hover {
+    background: #bb0000;
+    color: white;
+    
+  }
+.fa-instagram:hover {
+    background: #ff006a;
+    color: rgb(255, 255, 255);
+    
+  } 
+.fa-facebook {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+.fa-twitter {
+    background: #000000;
+    color: white;
+  }
+  
+.fa-google {
+    background: #000000;
+    color: white;
+  }
+.fa-youtube {
+    background: #000000;
+    color: white;
+  }
+  
+.fa-instagram {
+    background: #000000;
+    color: white;
+  } 
+  
+
+.form .link{
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    font-size: 17px;
+    color:#000000;
+}
+.link a:hover{
+    color: #0099ff;
+}
+.form .liw{
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 35px;
+    margin-top: -15px;
+}
+
+.about-section {
+    display: contents;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+.copyright{
+  display:flex;
+justify-content: center;
+align-items: center;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+}
